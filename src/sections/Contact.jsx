@@ -8,19 +8,19 @@ const Contact = () => {
 
   const contactInfo = [
     {
-      icon: 'fa-phone',
+      icon: 'fa fa-phone',
       title: 'Phone',
       content: contact.phone,
       href: `tel:${contact.phone.replace(/\s/g, '')}`,
     },
     {
-      icon: 'fa-envelope',
+      icon: 'fa fa-envelope',
       title: 'Email',
       content: contact.email,
       href: `mailto:${contact.email}`,
     },
     {
-      icon: 'fa-location-dot',
+      icon: 'fa fa-location-dot',
       title: 'Address',
       content: contact.address,
       href: null,
