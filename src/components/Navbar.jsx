@@ -42,7 +42,7 @@ const Navbar = () => {
             <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
               <span className="text-white font-display font-bold text-xl">GA</span>
             </div>
-            <div className="hidden sm:block">
+            <div className=" sm:block">
               <span className="text-white font-display font-bold text-xl">
                 GA Guest House
               </span>
