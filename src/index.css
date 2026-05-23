@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply  bg-secondary antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@theme {
+    --color-primary: #1B4332;
+    --color-primary-dark: #D4AF37;
+    --color-secondary: #F4F6F0;
+    --color-accent: #D4AF37;
+    --color-accent-light: #E8C84A;
+}
+
+@layer components {
+  .hero-bg {
+    background: linear-gradient(135deg, rgba(27, 67, 50, 0.85) 0%, rgba(20, 56, 40, 0.9) 100%),
+                url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80') center/cover no-repeat;
+  }
+
+  .glass-card {
+    @apply bg-white/95 backdrop-blur-md border border-white/20;
+  }
+
+  .service-card {
+    @apply transition-all duration-500;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .service-card:hover {
+    @apply -translate-y-3;
+    box-shadow: 0 25px 50px -12px rgba(27, 67, 50, 0.25);
+  }
+
+  .listing-card {
+    @apply transition-all duration-500;
+  }
+
+  .listing-card:hover {
+    @apply scale-[1.02];
+  }
+
+  .listing-card:hover .listing-overlay {
+    @apply opacity-100;
+  }
+
+  .btn-primary {
+    background: linear-gradient(135deg, #1B4332 0%, #2D6A4F 100%);
+    @apply transition-all duration-300;
+  }
+
+  .btn-primary:hover {
+    background: linear-gradient(135deg, #143828 0%, #1B4332 100%);
+    @apply -translate-y-0.5;
+    box-shadow: 0 10px 30px rgba(27, 67, 50, 0.3);
+  }
+
+  .btn-accent {
+    background: linear-gradient(135deg, #D4AF37 0%, #C9A227 100%);
+    @apply transition-all duration-300;
+  }
+
+  .btn-accent:hover {
+    background: linear-gradient(135deg, #C9A227 0%, #B8941F 100%);
+    @apply -translate-y-0.5;
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+  }
+
+  .nav-link {
+    @apply relative;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-[-4px] left-0 w-0 h-0.5 bg-accent transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .testimonial-card {
+    @apply transition-all duration-300;
+  }
+
+  .testimonial-card:hover {
+    @apply -translate-y-1;
+  }
+
+  .feature-icon {
+    background: linear-gradient(135deg, #1B4332 0%, #2D6A4F 100%);
+  }
+
+  .section-divider {
+    @apply h-1 w-[60px] rounded-sm;
+    background: linear-gradient(90deg, #D4AF37, #1B4332);
+  }
+
+  .image-zoom {
+    @apply overflow-hidden;
+  }
+
+  .image-zoom img {
+    @apply transition-transform duration-500;
+  }
+
+  .image-zoom:hover img {
+    @apply scale-110;
+  }
+
+  .star-rating {
+    @apply text-accent;
+  }
+
+  .parallax-section {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (max-width: 768px) {
+    .parallax-section {
+      background-attachment: scroll;
+    }
+  }
+}
+
+@layer utilities {
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .float-animation {
+    animation: float 3s ease-in-out infinite;
+  }
+}
