@@ -11,7 +11,7 @@ const ParallaxCTA = () => {
     <section
       className="parallax-section py-24 sm:py-32 relative"
       style={{
-        backgroundImage: `linear-gradient(rgba(27, 67, 50, 0.85), rgba(27, 67, 50, 0.9)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80')`,
+        backgroundImage: `linear-gradient(rgba(27, 30, 67, 0.75), rgba(28, 27, 67, 0.9)), url(../src/assets/gate.jpg)`,
       }}
     >
       <div

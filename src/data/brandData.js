@@ -10,7 +10,7 @@ export const brandData = {
   brandName: "GA Guest House",
   logo: "GA",
   colors: {
-    primary: "#1B4332",
+    primary: "#1c1b43",
     secondary: "#F4F6F0",
     accent: "#D4AF37",
     button: "#1B4332"

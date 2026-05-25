@@ -16,7 +16,7 @@
 }
 
 @theme {
-    --color-primary: #1B4332;
+    --color-primary: #1c1b43;
     --color-primary-dark: #D4AF37;
     --color-secondary: #F4F6F0;
     --color-accent: #D4AF37;
@@ -25,8 +25,8 @@
 
 @layer components {
   .hero-bg {
-    background: linear-gradient(135deg, rgba(27, 67, 50, 0.85) 0%, rgba(20, 56, 40, 0.9) 100%),
-                url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80') center/cover no-repeat;
+    background: linear-gradient(135deg, rgba(27, 27, 67, 0.75) 0%, rgba(23, 20, 56, 0.9) 100%),
+                url(../src/assets/building.webp) center/cover no-repeat;
   }
 
   .glass-card {
@@ -56,12 +56,12 @@
   }
 
   .btn-primary {
-    background: linear-gradient(135deg, #1B4332 0%, #2D6A4F 100%);
+    background: linear-gradient(135deg, #1c1b43 0%, #2d2e6a 100%);
     @apply transition-all duration-300;
   }
 
   .btn-primary:hover {
-    background: linear-gradient(135deg, #143828 0%, #1B4332 100%);
+    background: linear-gradient(135deg, #1c1438 0%, #1b1d43 100%);
     @apply -translate-y-0.5;
     box-shadow: 0 10px 30px rgba(27, 67, 50, 0.3);
   }
@@ -99,12 +99,12 @@
   }
 
   .feature-icon {
-    background: linear-gradient(135deg, #1B4332 0%, #2D6A4F 100%);
+    background: linear-gradient(135deg, #1c1b43 0%, #2d2e6a 100%);
   }
 
   .section-divider {
     @apply h-1 w-[60px] rounded-sm;
-    background: linear-gradient(90deg, #D4AF37, #1B4332);
+    background: linear-gradient(90deg, #D4AF37, #1c1b43);
   }
 
   .image-zoom {
