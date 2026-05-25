@@ -146,7 +146,7 @@ export const brandData = {
   contact: {
     phone: "+234 810 724 1441",
     email: "gaguesthouseibadan@gmail.com",
-    address: "Zone 2 Oganla Street, Olodo Road, Ibadan 200111, Oyo State, Nigeria",
+    address: "No 2 Zone B Oganla Street, Olodo Area, Ibadan Oyo State, Nigeria",
     whatsappLink: "https://wa.me/2348107241441",
     socials: {
       instagram: "https://instagram.com",
